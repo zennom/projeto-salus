@@ -1,14 +1,22 @@
 
-
 #banner {
     display: flex;
     justify-content: center;
-    background-image: url('../image/banner-2.jpg');
+    background-image: url('../image/banner-1.jpg');
     background-position: center;
     background-size: cover;
     height: 550px;
 }
 
+.column {
+    flex-direction: column;
+}
+.banner_headline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .banner_headline h1 {
     color: #ffffff;
     font-size: 70px;
@@ -28,6 +36,54 @@
     padding: 0px;
     max-width: 350px;
 }
+.banner_option {
+    height: 210px;
+    display: flex;
+   
+}
+.banner1,
+.banner2,
+.banner3 {
+  flex: 1;  
+  color: white;
+  padding: 20px;
+}
+.banner1 {
+    background-color:#A8DADC;
+}
+.banner2 {
+    background-color:#457B9D;
+}
+.banner3 {
+    background-color:#1D3557;
+}
+.banner_title {
+    font-size: 21;
+
+}
+.banner_desc {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner_option a {
+    display: inline-block;
+    border: 1px solid #ffffff;
+    padding: 5px;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+.dia1,
+.dia2,
+.dia3{
+    border-bottom: gray solid 1px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
 
 #geral {
     display: flex;
@@ -42,6 +98,7 @@
     flex: 1;
 
 }
+
 .widget_title {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -52,8 +109,8 @@
     font-weight: bold;
 }
 .widget_title_bar {
-    width: 50px;
-    height: 2px;
+    width: 70px;
+    height: 5px;
     background-color: #A8DADC;
     margin-top:10px ;
 }
@@ -79,7 +136,7 @@ article .news_data {
 article .news_posted_at {
     background-color: #457B9D;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 12px;
     padding: 10px;
     margin-right:2px;
 }
@@ -87,7 +144,7 @@ article .news_posted_at {
 article .news_comments {
     background-color: #1D3557;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 12px;
     padding: 10px;
 }
 article .news_thumbnail {
@@ -110,4 +167,10 @@ article .news_title {
      font-size: 14px;
      line-height: 22px;
      margin-bottom: 30px;
-}
+ }
+ footer {
+     background-color: #403d39;
+     display: flex;
+     justify-content: center;
+
+ }
